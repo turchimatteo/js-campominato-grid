@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Minato</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                        <h1>Campo Minato: la Griglia</h1>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="level">
+                        <label for="select-level">Difficoltà</label>
+                        <select name="" id="select-level">
+                            <option value="">Easy</option>
+                            <option value="">Hard</option>
+                            <option value="">Crazy</option>
+                        </select>
+                        <button id="play-button">Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <h2 id="intro-text">Seleziona il livello di difficoltà e genera la griglia</h2>
+
+            <div id="grid" class="main-grid hidden">
+                <!-- Single square -->
+                <div class="square clicked">
+                    <span>1</span>
+                </div>
+            </div>
+
+            <h2 class="hidden" id="final-message"></h2>
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h4>Made with &hearts; by Boolean</h4>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

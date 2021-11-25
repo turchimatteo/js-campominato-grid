@@ -1,0 +1,70 @@
+/* header */
+header {
+    height: 100px;
+}
+.logo ,
+.level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main */
+main {
+    height: calc(100% - 150px);
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* main h2 {
+    display: none;
+}
+main h2.visible {
+    display: block;
+} */
+.main-grid {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.square {
+    border: 1px solid black;
+    /* width: calc(100% / 10);
+    height: calc(100% / 10); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* .level-1.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+.level-2.square {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.level-3.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+} */
+.square.clicked {
+    background-color: cyan;
+}
+.square.bomb {
+    background-color: red;
+}
+
+/* footer */
+footer {
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
